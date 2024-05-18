@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Reservation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: lightblue;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: maroon;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: blue;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    form div {
+      margin-bottom: 15px;
+    }
+    form div label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    form div input, form div select, form div textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    form div button {
+      width: 100%;
+      padding: 30px;
+      background-color: blue;
+      color: black;
+      border: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form div button:hover {
+      background-color: white;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 500px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    .map {
+      text-align: center;
+      margin-top: 40px; /* Added margin to space the map from the gallery */
+    }
+    .map iframe {
+      width: 80%; /* Increased the width */
+      height: 500px; /* Increased the height */
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Make a Reservation</h1>
+    <p>We look forward to serving you! Please fill out the form below to make a reservation at our restaurant.</p>
+    <p>"Reserving a table is more than just securing a seat; it's a promise of delightful moments, shared smiles, and memories crafted over exquisite flavors."</p>
+
+    <form action="#" method="POST">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div>
+        <label for="people">Number of People:</label>
+        <select id="people" name="people" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Special Requests:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit Reservation</button>
+      </div>
+    </form>
+
+    <h1>Our Restaurant</h1>
+    <div class="gallery">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSspw_vOK0UNosBYXruxl-7tFnuVeUmOG2zqOPiKig2vg&s" alt="Picture 1">
+      <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2stcGYtcG9tLTEyNDIuanBn.jpg" alt="Picture 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwed8i1jajcQylR58nS5HX29ZHw7r8qIRV_ZmSt2x8pg&s" alt="Picture 3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYgU1HUepm7W1IkOVqhYKzfS6ZiEPw4wRNkkzx7_PoA&s" alt="Picture 4">
+    </div>
+
+    <h1>Here You can find Us</h1>
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0196966503565!2d-122.41941548468157!3d37.7749292797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e1c5f383%3A0x2f8e8f1a0a4e7f3e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1622643494896!5m2!1sen!2sus" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+</body>
+</html>
