@@ -30,10 +30,12 @@
 #RESPONSIVE DESIGN
 */
 /* BASE - Base tyles, Variables, Mixins, etc. */
+/* CSS */
+
 body {
   background-color: #ffffff;
   font-family: "Prata", serif;
-  color: #333333;
+  color: #000000;
   font-size: 15px;
   overflow-x: hidden;
 }
@@ -41,7 +43,46 @@ body {
 .no-padding {
   padding: 0;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
 
+.service-item {
+  background-color: 	#3498db;
+  border-radius: 8px;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 100px;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(157, 132, 132, 0.2);
+}
+
+.service-item i {
+  color: #14d561;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.service-item h5 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.service-item p {
+  color: #000000;
+  font-size: 1.1rem;
+}
 /* MODULES - Individual site components */
 ul {
   padding: 0;
@@ -467,12 +508,16 @@ img {
   width: 100px;
 }
 
+
+
+
+
 /*==================
  COUNTER SECTION
 ====================*/
 #mu-counter {
   background-attachment: fixed;
-  background-image: url("assets/img/counter-bg.jpg");
+  background-image: url("bb.jpg");
   background-size: cover;
   display: inline;
   float: left;
@@ -496,13 +541,13 @@ img {
 }
 #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li {
   display: inline-block;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #6e6b6b;
 }
 #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li:last-child {
   border-right: none;
 }
 #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter {
-  color: #fff;
+  color:#3498db ;
   display: inline;
   float: left;
   text-align: center;
@@ -646,7 +691,7 @@ img {
 RESERVATION SECTION
 ====================*/
 #mu-reservation {
-  background-color: #222;
+  background-color: 	#3498db;
   display: inline;
   float: left;
   padding: 100px 0;
@@ -658,7 +703,7 @@ RESERVATION SECTION
   width: 100%;
 }
 #mu-reservation .mu-reservation-area .mu-title h2 {
-  color: #fff;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content {
   display: inline;
@@ -668,13 +713,13 @@ RESERVATION SECTION
   width: 100%;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content h3 {
-  color: #fff;
+  color: #000000;
   display: inline-block;
   padding-bottom: 10px;
   font-weight: bold;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content p {
-  color: #fff;
+  color: #800000;
   letter-spacing: 0.5px;
   padding: 0 50px;
   text-align: center;
@@ -698,19 +743,19 @@ RESERVATION SECTION
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]::-webkit-input-placeholder,
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]::-webkit-input-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]:-moz-placeholder,
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]:-moz-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]::-moz-placeholder,
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]::-moz-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]:-ms-input-placeholder,
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]:-ms-input-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form select {
   border-radius: 0;
@@ -732,16 +777,16 @@ RESERVATION SECTION
   box-shadow: none;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea::-webkit-input-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea:-moz-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea::-moz-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea:-ms-input-placeholder {
-  color: #555;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form button[type="submit"] {
   border: none;
@@ -798,7 +843,7 @@ RESERVATION SECTION
 }
 #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li {
   background-color: #eee;
-  color: #555;
+  color: #000000;
   cursor: pointer;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
@@ -813,7 +858,7 @@ RESERVATION SECTION
   transition: all 0.5s;
 }
 #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li::after {
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   bottom: 5px;
   content: "";
   left: 5px;
@@ -827,7 +872,7 @@ RESERVATION SECTION
   transition: all 0.2s;
 }
 #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li:hover, #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li:focus {
-  color: #fff;
+  color: #800000;
 }
 #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li:hover::after, #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li:focus::after {
   bottom: 0px;
@@ -861,7 +906,7 @@ RESERVATION SECTION
   position: relative;
 }
 #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item:hover .mu-single-gallery-img:after {
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   bottom: 0;
   content: "";
   left: 0;
@@ -922,7 +967,7 @@ RESERVATION SECTION
   TESTIMONIAL SECTION
 ====================*/
 #mu-client-testimonial {
-  background-image: url("assets/img/testimonial-bg.jpg");
+  background-image: url("kl.jpg");
   background-size: cover;
   background-attachment: fixed;
   display: inline;
