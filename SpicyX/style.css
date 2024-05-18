@@ -1067,14 +1067,14 @@ RESERVATION SECTION
   width: 20px;
   display: inline-block;
   float: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
 }
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots li button {
-  display: none;
+  display: block;
 }
 
 /*==================
