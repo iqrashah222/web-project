@@ -35,7 +35,7 @@
 body {
   background-color: #ffffff;
   font-family: "Prata", serif;
-  color: #89161a;
+  color: #000000;
   font-size: 15px;
   overflow-x: hidden;
 }
@@ -52,10 +52,10 @@ body {
 }
 
 .service-item {
-  background-color: 	#FFDB58;
+  background-color: 	#3498db;
   border-radius: 8px;
   margin: 30px;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
   width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -80,8 +80,8 @@ body {
 }
 
 .service-item p {
-  color: #ff0e8e;
-  font-size: 0.9rem;
+  color: #000000;
+  font-size: 1.1rem;
 }
 /* MODULES - Individual site components */
 ul {
@@ -541,13 +541,13 @@ img {
 }
 #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li {
   display: inline-block;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #6e6b6b;
 }
 #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li:last-child {
   border-right: none;
 }
 #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter {
-  color: #fff;
+  color:#3498db ;
   display: inline;
   float: left;
   text-align: center;
@@ -691,7 +691,7 @@ img {
 RESERVATION SECTION
 ====================*/
 #mu-reservation {
-  background-color: 	#FFDB58;
+  background-color: 	#3498db;
   display: inline;
   float: left;
   padding: 100px 0;
@@ -703,7 +703,7 @@ RESERVATION SECTION
   width: 100%;
 }
 #mu-reservation .mu-reservation-area .mu-title h2 {
-  color: #800000;
+  color: #000000;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content {
   display: inline;
@@ -713,7 +713,7 @@ RESERVATION SECTION
   width: 100%;
 }
 #mu-reservation .mu-reservation-area .mu-reservation-content h3 {
-  color: #800000;
+  color: #000000;
   display: inline-block;
   padding-bottom: 10px;
   font-weight: bold;
