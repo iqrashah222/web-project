@@ -1042,7 +1042,6 @@ RESERVATION SECTION
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-bio {
   color: #fff;
   display: inline-block;
-  float: left;
   margin-top: 5px;
   margin-bottom: 25px;
   position: relative;
@@ -1975,7 +1974,7 @@ RESERVATION SECTION
 #mu-footer {
   background-color: #444;
   display: inline;
-  float: left;
+  float: right;
   padding: 50px 0;
   width: 100%;
 }
