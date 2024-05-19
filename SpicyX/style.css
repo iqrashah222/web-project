@@ -48,8 +48,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
   
 }
+
 
 .service-item {
   background-color: 	#3498db;
@@ -686,6 +688,7 @@ img {
   margin-top: 10px;
   font-size: 14px;
 }
+
 
 /*==================
 RESERVATION SECTION
