@@ -14,6 +14,7 @@
 #NAVBAR SECTION
 #SLIDER SECTION
 #ABOUT US SECTION
+
 #COUNTER SECTION
 #MENU ITEM SECTION
 #RESERVATION SECTION
@@ -24,8 +25,7 @@
 #LATEST NEWS SECTION
 #CONTACT SECTION
 #MAP SECTION
-#BLOG PAGE
-#ERROR  PAGE
+
 #FOOTER SECTION
 #RESPONSIVE DESIGN
 */
@@ -686,6 +686,41 @@ img {
   margin-top: 10px;
   font-size: 14px;
 }
+/*anguar*/
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  color: black;
+}
+
+.quotes {
+  background-color: lightblue; /* Light blue background */
+  color: blue;
+  font-size: 20px; /* Increased font size for more prominence */
+  margin-top: 20px;
+  padding: 20px; /* Added padding for better spacing */
+  border-radius: 10px; /* Rounded corners for a pleasing look */
+}
+
+.quotes div {
+  margin: 10px 0;
+}
+
 
 /*==================
 RESERVATION SECTION
@@ -965,90 +1000,7 @@ RESERVATION SECTION
 
 /*==================
   TESTIMONIAL SECTION
-====================*/
-#mu-client-testimonial {
-  background-image: url("kl.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-client-testimonial .mu-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
-  display: inline;
-  float: left;
-  padding: 70px 0 100px;
-  width: 100%;
-}
-#mu-client-testimonial .mu-overlay .mu-title h2 {
-  color: #fff;
-}
-#mu-client-testimonial .mu-client-testimonial-area {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single {
-  display: inline;
-  float: left;
-  padding: 0 150px;
-  position: relative;
-  width: 100%;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info {
-  display: inline;
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p {
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  line-height: 35px;
-  margin-top: 30px;
-  padding: 0;
-  position: relative;
-  z-index: 20;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p:before {
-  content: '\f10e';
-  font-family: fontAwesome;
-  font-size: 50px;
-  left: 1%;
-  position: absolute;
-  text-align: center;
-  top: 20%;
-  opacity: 0.6;
-  width: 100%;
-  z-index: -10;
-}
-#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-bio {
-  color: #fff;
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 25px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  z-index: 30;
-}
+=/* Testimonial Bio Paragraph Styling */
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-bio p {
   display: inline-block;
   font-size: 18px;
@@ -1059,23 +1011,110 @@ RESERVATION SECTION
   min-width: 175px;
   padding-top: 10px;
 }
+
+/* Testimonial Slider Dots Styling */
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots {
   text-align: center;
 }
+
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots li {
   border-radius: 50%;
-  width: 20px;
-  display: inline-block;
+  width: 10px;
+  display: block;
   float: none;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
+
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots li button {
   display: block;
 }
+
+/* Testimonial Section Styling */
+#mu-client-testimonial {
+  background-image: url("kl.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline;
+  float: left;
+  padding: 70px 0 100px;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-overlay .mu-title h2 {
+  color: #fff;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single {
+  display: inline;
+  float: left;
+  padding: 0 150px;
+  position: relative;
+  width: 100%;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info {
+  display: inline;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+  margin-top: 30px;
+  padding: 0;
+  position: relative;
+  z-index: 20;
+}
+
+#mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p:before {
+  content: '\f10e';
+  font-family: fontAwesome;
+  font-size: 50px;
+  left: 1%;
+  position: absolute;
+  text-align: center;
+}
+
+ 
 
 /*==================
   SUBSCRIPTION SECTION
@@ -1148,14 +1187,14 @@ RESERVATION SECTION
   width: 100%;
 }
 #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav {
-  display: inline;
+  display:  inline;
   float: left;
   text-align: center;
   width: 100%;
 }
 #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-list li {
   background-color: #f8f8f8;
-  display: inline-block;
+  display: inline;
   margin: 0 5px;
   width: 22%;
   overflow: hidden;
@@ -1206,11 +1245,11 @@ RESERVATION SECTION
   padding: 23px 20px;
   text-align: center;
   opacity: 0;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a {
   display: inline-block;
@@ -1218,11 +1257,11 @@ RESERVATION SECTION
   padding: 5px;
   text-align: center;
   width: 35px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover, #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus {
   color: #fff;
@@ -1236,11 +1275,11 @@ RESERVATION SECTION
   width: 20px;
   display: inline-block;
   float: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-dots li button {
   display: none;
@@ -2428,18 +2467,6 @@ RESERVATION SECTION
     padding: 20% 0;
   }
 
-  #mu-error .mu-error-area h2 {
-    font-size: 80px;
-    line-height: 80px;
-  }
-
-  #mu-error .mu-error-area p {
-    font-size: 14px;
-  }
-
-  #mu-error .mu-error-area {
-    padding: 0 15px 30px;
-  }
 
   #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
     height: 100px;
@@ -2468,4 +2495,6 @@ RESERVATION SECTION
   .mu-news-single .mu-news-single-content .mu-meta-nav li {   
     border-right: none;
   }
+}
+}
 }

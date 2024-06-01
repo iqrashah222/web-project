@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>SpicyX | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -81,10 +84,7 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">PAGE <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">                
-                <li><a href="blog-archive.html">BLOG</a></li>
-                <li><a href="blog-single.html">BLOG DETAILS</a></li>
-                <li><a href="404.html">404 PAGE</a></li>
-                <li><a href="reservation.html">reservation PAGE </a></li>                                            
+                <li><a href="reservation.html">RESERVATION PAGE</a></li>                                            
               </ul>
             </li>
           </ul>                            
@@ -771,6 +771,36 @@
     </div>
   </section>
   <!-- End Restaurant Menu -->
+  <!--start angular -->
+ <div ng-app="myApp" ng-controller="myCtrl">
+    
+    <button ng-click="myFunc()">Tasty Chuckles</button>
+    
+    <div ng-show="showMe">
+        <h1>Hello foodies! Time to dive into deliciousness!
+        </h1>
+        <div>
+          <img src="https://t3.ftcdn.net/jpg/05/97/52/56/360_F_597525620_zgSlP3f0DynQhDdZ26SirWJixlEPL8pn.jpg" alt="Funny Quote Image">
+ </div>
+        <div>"If laughter is the best medicine, then this place is my hospital."</div>
+        <div>"Came for the food, stayed for the laughs!"</div>
+        <div>"Warning: May cause excessive giggling and food comas.</div>
+        <div>"Eating here feels like a comedy show with a side of fries."</div>
+    </div>
+    
+    </div>
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function() {
+            $scope.showMe = !$scope.showMe;
+        }
+    });
+    </script>
+      <p>click the tasty chuckles for our happy customers funny reviews and click again to hide.</p>
+      <!--end angular -->
+      
 
   <!-- Start Reservation section -->
   <section id="mu-reservation">
@@ -1010,57 +1040,59 @@
   <!-- Start Client Testimonial section -->
   <section id="mu-client-testimonial">
     <div class="mu-overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mu-client-testimonial-area">
-              <div class="mu-title">
-                <span class="mu-subtitle">Testimonials</span>
-                <h2>Rave and Reviews</h2>
-                <i class="fa fa-spoon"></i>              
-                <span class="mu-title-bar"></span>
-              </div>
-              <!-- testimonial content -->                                
-              <div class="mu-testimonial-content">
-                <!-- testimonial slider -->
-                <ul class="mu-testimonial-slider">
-                  <li>
-                    <div class="mu-testimonial-single">                   
-                      <div class="mu-testimonial-info">
-                        <p> "The dining experience was phenomenal!The food was delicious and beautifully presented."</p>
-                      </div>
-                      <div class="mu-testimonial-bio">
-                        <p>- Michael Johnson</p>                      
-                      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-client-testimonial-area">
+                        <div class="mu-title">
+                            <span class="mu-subtitle">Testimonials</span>
+                            <h2>Rave and Reviews</h2>
+                            <i class="fa fa-spoon"></i>
+                            <span class="mu-title-bar"></span>
+                        </div>
+                        <!-- testimonial content -->
+                        <div class="mu-testimonial-content">
+                            <!-- testimonial slider -->
+                            <ul class="mu-testimonial-slider">
+                                <li>
+                                    <div class="mu-testimonial-single">
+                                        <div class="mu-testimonial-info">
+                                            <p>"The dining experience was phenomenal! The food was delicious and beautifully presented."</p>
+                                            <div class="mu-testimonial-bio">
+                                                <p>- Michael Johnson</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mu-testimonial-single">
+                                        <div class="mu-testimonial-info">
+                                            <p>"I recently visited for a family dinner, and we were all impressed. The menu variety is amazing."</p>
+                                            <div class="mu-testimonial-bio">
+                                                <p>- Sophia Martinez</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mu-testimonial-single">
+                                        <div class="mu-testimonial-info">
+                                            <p>"This place become our favorite spot. The ambiance is perfect."</p>
+                                            <div class="mu-testimonial-bio">
+                                                <p>- Amanda Collins</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </li>
-                   <li>
-                    <div class="mu-testimonial-single">                   
-                      <div class="mu-testimonial-info">
-                        <p>"I recently visited for a family dinner, and we were all impressed. The menu variety is amazing."</p>
-                      <div class="mu-testimonial-bio">
-                        <p>- Sophia Martinez</p>                      
-                      </div>
-                    </div>
-                  </li>
-                   <li>
-                    <div class="mu-testimonial-single">                   
-                      <div class="mu-testimonial-info">
-                        <p>"This place become our favorite spot. The ambiance is perfect."</p>
-                      </div>
-                      <div class="mu-testimonial-bio">
-                        <p>- Amanda Collins</p>                      
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
+
   <!-- End Client Testimonial section -->
 
   <!-- Start Subscription section -->
@@ -1081,162 +1113,90 @@
   <!-- End Subscription section -->
 
   <!-- Start Chef Section -->
-  <section id="mu-chef">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-chef-area">
-            <div class="mu-title">
-              <span class="mu-subtitle">Our Professionals</span>
-              <h2>MASTER CHEFS</h2>
-              <i class="fa fa-spoon"></i>              
-              <span class="mu-title-bar"></span>
-            </div>
-            <div class="mu-chef-content">
-              <ul class="mu-chef-nav">
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Simon Jonson</h4>
-                      <span>Head Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="chef-6.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Kelly Wenzel</h4>
-                      <span>Pizza Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="chef-3.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Greg Hong</h4>
-                      <span>Grill Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Marty Fukuda</h4>
-                      <span>Burger Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>  
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Simon Jonson</h4>
-                      <span>Head Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-2.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Kelly Wenzel</h4>
-                      <span>Pizza Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-3.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Greg Hong</h4>
-                      <span>Grill Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Marty Fukuda</h4>
-                      <span>Burger Chef</span>
-                    </div>
-                    <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </li>                      
-              </ul>
-            </div>
+ 
+          <div class="mu-footer-copyright">
+            <p>Designed by <a rel="nofollow" href="http://www.markups.io/" style="color: #fff;">BSCS team</a></p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </div> <section id="mu-chef">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-chef-area">
+                    <div class="mu-title">
+                        <span class="mu-subtitle">Our Professionals</span>
+                        <h2>MASTER CHEFS</h2>
+                        <i class="fa fa-spoon"></i>              
+                        <span class="mu-title-bar"></span>
+                    </div>
+                    <div class="mu-chef-content">
+                        <div class="mu-chef-slider">
+                            <div class="mu-single-chef">
+                                <figure class="mu-single-chef-img">
+                                    <img src="assets/img/chef/chef-1.jpg" alt="chef img">
+                                </figure>
+                                <div class="mu-single-chef-info">
+                                    <h4>Simon Jonson</h4>
+                                    <span>Head Chef</span>
+                                </div>
+                                <div class="mu-single-chef-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="mu-single-chef">
+                                <figure class="mu-single-chef-img">
+                                    <img src="assets/img/chef/chef-2.jpg" alt="chef img">
+                                </figure>
+                                <div class="mu-single-chef-info">
+                                    <h4>Kelly Wenzel</h4>
+                                    <span>Pizza Chef</span>
+                                </div>
+                                <div class="mu-single-chef-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="mu-single-chef">
+                                <figure class="mu-single-chef-img">
+                                    <img src="assets/img/chef/chef-3.jpg" alt="chef img">
+                                </figure>
+                                <div class="mu-single-chef-info">
+                                    <h4>Greg Hong</h4>
+                                    <span>Grill Chef</span>
+                                </div>
+                                <div class="mu-single-chef-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="mu-single-chef">
+                                <figure class="mu-single-chef-img">
+                                    <img src="C:\Users\DELL CORE I7\Desktop\web\MarkUps-SpicyX\SpicyX\assets\img\chef\chef-4.jpg" alt="chef img">
+                                </figure>
+                                <div class="mu-single-chef-info">
+                                    <h4>Marty Fukuda</h4>
+                                    <span>Burger Chef</span>
+                                </div>
+                                <div class="mu-single-chef-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
   <!-- End Chef Section -->
 
   <!-- Start Latest News -->
@@ -1272,36 +1232,6 @@
                     </div>                   
                   </article>
                 </div>
-                <!-- start single blog -->
-                <div class="col-md-6">
-                  <article class="mu-news-single">
-                    <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
-                    <figure class="mu-news-img">
-                      <a href="#"><img src="alex-haney-CAhjZmVk5H4-unsplash.jpg" alt="img"></a>                      
-                    </figure>
-                    <div class="mu-news-single-content">                      
-                      <ul class="mu-meta-nav">
-                        <li>By Admin</li>
-                        <li>Date: May 10 2016</li>
-                      </ul>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est quaerat magnam exercitationem voluptas, voluptatem sed quam ab laborum voluptatum tempore dolores itaque, molestias vitae.</p>
-                      <div class="mu-news-single-bottom">
-                        <a href="blog-single.html" class="mu-readmore-btn">Read More</a>
-                      </div>
-                    </div>                   
-                  </article>
-                </div>
-              </div>
-              <!-- Start brows more btn -->
-              <a href="blog-archive.html" class="mu-browsmore-btn">BROWS MORE</a>
-              <!-- End brows more btn -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Latest News -->
 
   <!-- Start Contact section -->
   <section id="mu-contact">
@@ -1392,10 +1322,6 @@
           <div class="mu-footer-contact">
             <p>Contact us: <a href="shahiqra679@gmail.com">shahiqra679@gmail.com</a></p>
           </div>
-          <div class="mu-footer-copyright">
-            <p>Designed by <a rel="nofollow" href="http://www.markups.io/" style="color: #fff;">BSCS team</a></p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -1406,7 +1332,37 @@
   <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>  
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>   
+  <script src="assets/js/bootstrap.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.mu-chef-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
   <!-- Slick slider -->
   <script type="text/javascript" src="assets/js/slick.js"></script>
   <!-- Counter -->
