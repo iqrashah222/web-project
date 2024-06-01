@@ -251,5 +251,43 @@ jQuery(function($){
    jQuery(window).load(function() { // makes sure the whole site is loaded      
       jQuery('#aa-preloader-area').delay(300).fadeOut('slow'); // will fade out      
     })
+    $(document).ready(function() {
+      $("#submit").click(function(event) {
+          event.preventDefault(); // Prevent the default form submission
   
-});
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var subject = $("#subject").val();
+          var message = $("#message").val();
+  
+          if (!name || !email || !subject || !message) {
+              $("#response").html("<div class='alert alert-danger'>All fields are required.</div>");
+              return;
+          }
+  
+          var formData = {
+              name: name,
+              email: email,
+              subject: subject,
+              message: message
+          };
+  
+          $.ajax({
+              url: 'https://jsonplaceholder.typicode.com/posts',
+              type: 'POST',
+              contentType: 'application/json',
+              data: JSON.stringify(formData),
+              success: function(response) {
+                  $("#response").html("<div class='alert alert-success'>Hi " + response.name + "! Your request regarding " + response.subject + " is received.</div>");
+              },
+              error: function(xhr, status, error) {
+                  if (xhr.status == 404) {
+                      $("#response").html("<div class='alert alert-danger'>File not found</div>");
+                  } else {
+                      $("#response").html("<div class='alert alert-danger'>An error occurred: " + error + "</div>");
+                  }
+              }
+          });
+      });
+  });
+});  

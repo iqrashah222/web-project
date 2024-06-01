@@ -48,8 +48,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
   
 }
+
 
 .service-item {
   background-color: 	#3498db;
@@ -720,6 +722,7 @@ button:hover {
 .quotes div {
   margin: 10px 0;
 }
+
 
 
 /*==================

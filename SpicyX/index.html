@@ -59,7 +59,7 @@
   <!-- END SCROLL TOP BUTTON -->
 
   <!-- Start header section -->
-  <header id="mu-header">  
+  <header id="mu-header" style="background-color: black;">  
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
       <div class="container">
         <div class="navbar-header">
@@ -71,20 +71,24 @@
             <span class="icon-bar"></span>
           </button>
           <!-- LOGO -->                                                        
-          <a class="navbar-brand" href="index.html"><h2>Foodie</h2></a> 
+          <a class="navbar-brand" href="index.html"><h2 style="font-weight:bolder; color:#3498db; 
+            font-family: none;">Foodie</h2></a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-            <li><a href="#mu-slider">HOME</a></li>
-            <li><a href="#mu-about-us">ABOUT US</a></li>                       
-            <li><a href="#mu-restaurant-menu">MENU</a></li>                       
-            <li><a href="#mu-reservation">RESERVATION</a></li>                       
-            <li><a href="#mu-gallery">GALLERY</a></li>
-            <li><a href="#mu-contact">CONTACT</a></li> 
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>                       
+            <li><a href="Menu.html">MENU</a></li>                       
+            <li><a href="reservation.html">RESERVATION</a></li>                       
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="Contact_us.html">CONTACT</a></li> 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">PAGE <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">                
-                <li><a href="reservation.html">RESERVATION PAGE</a></li>                                            
+                <li><a href="blog-archive.html">BLOG</a></li>
+                <li><a href="blog-single.html">BLOG DETAILS</a></li>
+                <li><a href="404.html">404 PAGE</a></li>
+                <li><a href="reservation.html">reservation PAGE </a></li>                                            
               </ul>
             </li>
           </ul>                            
@@ -93,6 +97,7 @@
     </nav> 
   </header>
   <!-- End header section -->
+
  
 
   <!-- Start slider  -->
@@ -153,11 +158,11 @@
       </div>
     </div>
   </section>
-  <br>
-  <br>
+
   <!-- End slider  -->
 
   <div class="container">
+   
     <div class="service-item">
         <img src="icons8-chef-100.png" alt="Master Chefs">
         <h5><b>Master Chefs</b></h5>
@@ -1040,59 +1045,57 @@
   <!-- Start Client Testimonial section -->
   <section id="mu-client-testimonial">
     <div class="mu-overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-client-testimonial-area">
-                        <div class="mu-title">
-                            <span class="mu-subtitle">Testimonials</span>
-                            <h2>Rave and Reviews</h2>
-                            <i class="fa fa-spoon"></i>
-                            <span class="mu-title-bar"></span>
-                        </div>
-                        <!-- testimonial content -->
-                        <div class="mu-testimonial-content">
-                            <!-- testimonial slider -->
-                            <ul class="mu-testimonial-slider">
-                                <li>
-                                    <div class="mu-testimonial-single">
-                                        <div class="mu-testimonial-info">
-                                            <p>"The dining experience was phenomenal! The food was delicious and beautifully presented."</p>
-                                            <div class="mu-testimonial-bio">
-                                                <p>- Michael Johnson</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mu-testimonial-single">
-                                        <div class="mu-testimonial-info">
-                                            <p>"I recently visited for a family dinner, and we were all impressed. The menu variety is amazing."</p>
-                                            <div class="mu-testimonial-bio">
-                                                <p>- Sophia Martinez</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mu-testimonial-single">
-                                        <div class="mu-testimonial-info">
-                                            <p>"This place become our favorite spot. The ambiance is perfect."</p>
-                                            <div class="mu-testimonial-bio">
-                                                <p>- Amanda Collins</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mu-client-testimonial-area">
+              <div class="mu-title">
+                <span class="mu-subtitle">Testimonials</span>
+                <h2>Rave and Reviews</h2>
+                <i class="fa fa-spoon"></i>              
+                <span class="mu-title-bar"></span>
+              </div>
+              <!-- testimonial content -->                                
+              <div class="mu-testimonial-content">
+                <!-- testimonial slider -->
+                <ul class="mu-testimonial-slider">
+                  <li>
+                    <div class="mu-testimonial-single">                   
+                      <div class="mu-testimonial-info">
+                        <p> "The dining experience was phenomenal!The food was delicious and beautifully presented."</p>
+                      </div>
+                      <div class="mu-testimonial-bio">
+                        <p>- Michael Johnson</p>                      
+                      </div>
                     </div>
-                </div>
+                  </li>
+                   <li>
+                    <div class="mu-testimonial-single">                   
+                      <div class="mu-testimonial-info">
+                        <p>"I recently visited for a family dinner, and we were all impressed. The menu variety is amazing."</p>
+                      <div class="mu-testimonial-bio">
+                        <p>- Sophia Martinez</p>                      
+                      </div>
+                    </div>
+                  </li>
+                   <li>
+                    <div class="mu-testimonial-single">                   
+                      <div class="mu-testimonial-info">
+                        <p>"This place become our favorite spot. The ambiance is perfect."</p>
+                      </div>
+                      <div class="mu-testimonial-bio">
+                        <p>- Amanda Collins</p>                      
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-
+  </section>
   <!-- End Client Testimonial section -->
 
   <!-- Start Subscription section -->
@@ -1102,8 +1105,9 @@
         <div class="col-md-12">
           <div class="mu-subscription-area">
             <form class="mu-subscription-form">
+              <h2>SUBSCRIPTION </h2><br><br>
               <input type="text" placeholder="Type Your Email Address">
-              <button class="mu-readmore-btn" type="Submit">SUBSCRIBE</button>
+              <button class="mu-readmore-btn" type="Submit">SUBSCRIBE US</button>
             </form>            
           </div>
         </div>
@@ -1113,90 +1117,162 @@
   <!-- End Subscription section -->
 
   <!-- Start Chef Section -->
- 
-          <div class="mu-footer-copyright">
-            <p>Designed by <a rel="nofollow" href="http://www.markups.io/" style="color: #fff;">BSCS team</a></p>
-          </div>
-        </div> <section id="mu-chef">
+  <section id="mu-chef">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mu-chef-area">
-                    <div class="mu-title">
-                        <span class="mu-subtitle">Our Professionals</span>
-                        <h2>MASTER CHEFS</h2>
-                        <i class="fa fa-spoon"></i>              
-                        <span class="mu-title-bar"></span>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-chef-area">
+            <div class="mu-title">
+              <span class="mu-subtitle">Our Professionals</span>
+              <h2>MASTER CHEFS</h2>
+              <i class="fa fa-spoon"></i>              
+              <span class="mu-title-bar"></span>
+            </div>
+            <div class="mu-chef-content">
+              <ul class="mu-chef-nav">
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Simon Jonson</h4>
+                      <span>Head Chef</span>
                     </div>
-                    <div class="mu-chef-content">
-                        <div class="mu-chef-slider">
-                            <div class="mu-single-chef">
-                                <figure class="mu-single-chef-img">
-                                    <img src="assets/img/chef/chef-1.jpg" alt="chef img">
-                                </figure>
-                                <div class="mu-single-chef-info">
-                                    <h4>Simon Jonson</h4>
-                                    <span>Head Chef</span>
-                                </div>
-                                <div class="mu-single-chef-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="mu-single-chef">
-                                <figure class="mu-single-chef-img">
-                                    <img src="assets/img/chef/chef-2.jpg" alt="chef img">
-                                </figure>
-                                <div class="mu-single-chef-info">
-                                    <h4>Kelly Wenzel</h4>
-                                    <span>Pizza Chef</span>
-                                </div>
-                                <div class="mu-single-chef-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="mu-single-chef">
-                                <figure class="mu-single-chef-img">
-                                    <img src="assets/img/chef/chef-3.jpg" alt="chef img">
-                                </figure>
-                                <div class="mu-single-chef-info">
-                                    <h4>Greg Hong</h4>
-                                    <span>Grill Chef</span>
-                                </div>
-                                <div class="mu-single-chef-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="mu-single-chef">
-                                <figure class="mu-single-chef-img">
-                                    <img src="C:\Users\DELL CORE I7\Desktop\web\MarkUps-SpicyX\SpicyX\assets\img\chef\chef-4.jpg" alt="chef img">
-                                </figure>
-                                <div class="mu-single-chef-info">
-                                    <h4>Marty Fukuda</h4>
-                                    <span>Burger Chef</span>
-                                </div>
-                                <div class="mu-single-chef-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                              </div>
-                              </div>
-                          </div>
-                      </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
                   </div>
-              </div>
+                </li>
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="chef-6.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Kelly Wenzel</h4>
+                      <span>Pizza Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="chef-3.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Greg Hong</h4>
+                      <span>Grill Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Marty Fukuda</h4>
+                      <span>Burger Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>  
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Simon Jonson</h4>
+                      <span>Head Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="assets/img/chef/chef-2.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Kelly Wenzel</h4>
+                      <span>Pizza Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="assets/img/chef/chef-3.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Greg Hong</h4>
+                      <span>Grill Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="mu-single-chef">
+                    <figure class="mu-single-chef-img">
+                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
+                    </figure>
+                    <div class="mu-single-chef-info">
+                      <h4>Marty Fukuda</h4>
+                      <span>Burger Chef</span>
+                    </div>
+                    <div class="mu-single-chef-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </li>                      
+              </ul>
+            </div>
           </div>
-      </section>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- End Chef Section -->
 
   <!-- Start Latest News -->
@@ -1242,31 +1318,32 @@
             <div class="mu-title">
               <span class="mu-subtitle">Get In Touch</span>
               <h2>Contact Us</h2>
-              <i class="fa fa-spoon"></i>              
+              <i class="fa fa-spoon"></i>
               <span class="mu-title-bar"></span>
             </div>
             <div class="mu-contact-content">
               <div class="row">
                 <div class="col-md-6">
                   <div class="mu-contact-left">
-                    <form class="mu-contact-form">
+                    <form class="mu-contact-form" method="post" novalidate>
                       <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required autocomplete="name">
                       </div>
                       <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                      </div>                      
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required autocomplete="email">
+                      </div>
                       <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                       </div>
                       <div class="form-group">
-                        <label for="message">Message</label>                        
-                        <textarea class="form-control" id="message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
-                      </div>                      
-                      <button type="submit" class="mu-send-btn">Send Message</button>
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" cols="30" rows="10" placeholder="Type Your Message" required></textarea>
+                      </div>
+                      <button type="submit" class="mu-send-btn" id="submit">Send Message</button>
+                      <div id="response"></div>
                     </form>
                   </div>
                 </div>
@@ -1277,12 +1354,12 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia temporibus corporis ea non consequatur porro corrupti hic voluptatibus assumenda, doloribus.</p>
                       <address>
                         <p><i class="fa fa-phone"></i> (850) 457 6688</p>
-                        <p><i class="fa fa-envelope-o"></i>contact@markups.io</p>
-                        <p><i class="fa fa-map-marker"></i>368 St. Panama City, Florida, USA</p>
+                        <p><i class="fa fa-envelope-o"></i> contact@markups.io</p>
+                        <p><i class="fa fa-map-marker"></i> 368 St. Panama City, Florida, USA</p>
                       </address>
                     </div>
                     <div class="mu-contact-widget">
-                      <h3>Open Hours</h3>                      
+                      <h3>Open Hours</h3>
                       <address>
                         <p><span>Monday - Friday</span> 9.00 am to 12 pm</p>
                         <p><span>Saturday</span> 9.00 am to 10 pm</p>
@@ -1298,7 +1375,8 @@
       </div>
     </div>
   </section>
-  <!-- End Contact section -->
+  
+  
 
   <!-- Start Map section -->
   <section id="mu-map">
