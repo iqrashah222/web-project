@@ -35,7 +35,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
     
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -895,6 +896,11 @@
             </div>
             <div class="mu-gallery-content">
               <div class="mu-gallery-top">
+                <center>
+                  <h3>Hide Gallery: <input type="checkbox" ng-model="myCheck"></h1>
+                </center>
+
+                <div ng-hide="myCheck">
                 <!-- Start gallery menu -->
                 <ul>
                   <li class="filter active" data-filter="all">ALL</li>
@@ -904,7 +910,7 @@
                   <li class="filter" data-filter=".dinner">DINNER</li>
                   <li class="filter" data-filter=".dessert">DESSERT</li>
                 </ul>
-              </div>
+              
               <!-- Start gallery image -->
               <div class="mu-gallery-body" id="mixit-container">
                 <!-- start single gallery image -->
@@ -1041,7 +1047,11 @@
     </div>
   </section>
   <!-- End Gallery -->
-  
+<!--         Angular code for hiding gallery  -->
+  <script>
+    var app = angular.module('myApp', ['ngAnimate']);
+  </script>
+        
   <!-- Start Client Testimonial section -->
   <section id="mu-client-testimonial">
     <div class="mu-overlay">
