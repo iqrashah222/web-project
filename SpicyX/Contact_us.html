@@ -34,6 +34,8 @@
   <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -41,9 +43,33 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <style>
+    /* CSS for styling branches and anchor tags */
+    .branch-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .branch {
+      width: 45%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .branch.left {
+      text-align: left;
+    }
+
+    .branch.right {
+      text-align: right;
+    }
+  </style>
+
 </head>
 
-<body>
+<body ng-app="myApp">
 
   <!-- Start header section -->
   <header id="mu-header" style="background-color: black;">
@@ -156,6 +182,53 @@
   </section>
   <!-- End Contact section -->
 
+
+  <!-- Branches -->
+  <h1><a href="#!/">Our Branches</a></h1>
+  <div style="display: flex; justify-content: space-evenly;" >
+    <div>
+      <a href="#!/Branch1"style=" color: Black; "><span  style="font-size: 20px; font-weight: 500;">F-11 Branch</span></a>
+    </div>
+    <div>
+      <a href="#!/Branch2" style="color: black;" ><span style="font-size: 20px; font-weight: 500;">E-11 Branch</span></a>
+    </div>
+
+  </div>
+
+  <!-- Container for views -->
+  <div ng-view></div>
+ 
+</div>
+
+<script>
+  var app = angular.module("myApp", ["ngRoute"]);
+  
+  app.config(function($routeProvider) {
+      $routeProvider
+      .when("/", {
+          template : "<h1></h1>"
+      })
+      .when("/Branch1", {
+          template : "<h1>F-11 Branch</h1><p>{{msg}}</p>",
+          controller : "Branch1Ctrl"
+      })
+      .when("/Branch2", {
+          template : "<h1>E-11 Branch</h1><p>{{msg}}</p>",
+          controller : "Branch2Ctrl"
+      })
+      .otherwise({redirectTo: '/'});
+  });
+
+  app.controller("Branch1Ctrl", function ($scope) {
+    $scope.msg = "F-11 Branch is located in F-11 Markaz, Islamabad. Providing quality services.";
+  });
+  
+  app.controller("Branch2Ctrl", function ($scope) {
+    $scope.msg = "E-11 Branchis located in E-11 Markaz, Islamabad. Delivering excellence.";
+  });
+</script>
+
+
   <!-- Start Footer -->
   <footer id="mu-footer">
     <div class="container">
@@ -198,3 +271,4 @@
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script>
 </body>
+</html>
